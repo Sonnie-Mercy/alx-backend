@@ -50,13 +50,14 @@ class Server:
         assert index < total_items
         data = []
         count = 0
-        while count < page_size and index < total_items:
-            if index in dataset:
-                data.append(dataset[index])
+        curr_index = index
+        while count < page_size and curr_index < total_items:
+            if curr_index in dataset:
+                data.append(dataset[curr_index])
                 count += 1
-            index += 1
+            curr_index += 1
 
-        next_index = index if index < total_items else None
+        next_index = curr_index if curr_index < total_items else None
         return {
                 'index': index,
                 'data': data,
