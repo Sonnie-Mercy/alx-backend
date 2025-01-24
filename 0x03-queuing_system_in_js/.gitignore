@@ -20,3 +20,34 @@ redis-*/ # Exclude Redis version directories
 # Environment files
 .env
 redis-server
+
+*.rdb
+*.aof
+
+# Logs
+logs/
+*.log
+debug.log
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+.tmp/
+temp/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Babel and transpiled files
+build/
+dist/
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+*.iml
+
+# Miscellaneous
+coverage/
