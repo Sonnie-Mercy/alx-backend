@@ -1,49 +1,6 @@
-node_modules
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+node modules
+# Ignore Redis build folder
+redis-6.0.10/
 
-# Dependency directories
-node_modules/
-.bower_components/
-
-# Build directories
-dist/
-build/
-.tmp/
-
-# Redis dump files
-dump.rdb
-redis.log
-redis.conf
-
-# npm and lock files
-package-lock.json
-yarn.lock
-
-# Editor files
-*.sublime-project
-*.sublime-workspace
-.idea/
-*.swp
-*.swo
-*.DS_Store
-.vscode/
-*.env
-.env.local
-.env.development
-.env.production
-.env.test
-
-# MacOS system files
-.DS_Store
-
-# Kue database
-kue.db
-
-# Test coverage reports
-coverage/
-.nyc_output/
+# Ignore Redis source tarball
+redis-6.0.10.tar.gz
