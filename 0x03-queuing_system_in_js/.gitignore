@@ -19,3 +19,4 @@ redis-*/ # Exclude Redis version directories
 
 # Environment files
 .env
+redis-server
